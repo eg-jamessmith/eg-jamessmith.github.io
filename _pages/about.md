@@ -5,6 +5,4 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-I'm a senior data scientist who excels at data wrangling, machine learning, exploratory analysis, and data visualizations.
-
-Etc, etc, etc
+Hello there! I'm a data scientist with an interest in AI Safety and Ethics. In this metaphorical corner of the internet, I hope to use my skills to make a positive impact on how we use and apply machine learning.
