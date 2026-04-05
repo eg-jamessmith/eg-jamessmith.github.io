@@ -8,47 +8,32 @@ classes: wide landing-page
 
 <!-- Keep the homepage content in one file so it stays easy to tweak. -->
 <section class="home-intro" id="top">
-  <div class="home-intro__main">
-    <p class="home-eyebrow">James Smith</p>
-    <h1 class="home-title">Data scientist in Ireland.</h1>
-    <p class="home-lede">
-      I spend most of my time working with analytics and machine learning in insurance,
-      especially around fraud, claims, pricing, retention, and internal AI tools.
-      This page is just a quiet outline of that work and a few things I am interested in.
-    </p>
-  </div>
-  <div class="home-intro__aside">
-    <dl class="home-facts">
-      <div>
-        <dt>Now</dt>
-        <dd>Lead Data Scientist at RedClick</dd>
-      </div>
-      <div>
-        <dt>Previously</dt>
-        <dd>Liberty Mutual, including a Trusted AI rotation</dd>
-      </div>
-      <div>
-        <dt>Interested in</dt>
-        <dd>decision support, simulation, ecology-adjacent ideas, and clear communication</dd>
-      </div>
-    </dl>
-    <p class="home-inline-links">
-      <a href="#projects">Projects</a>
-      <span aria-hidden="true">/</span>
-      <a href="https://github.com/eg-jamessmith">GitHub</a>
-      <span aria-hidden="true">/</span>
-      <a href="https://www.linkedin.com/in/james-smith-816977131/">LinkedIn</a>
-    </p>
-  </div>
+  <p class="home-eyebrow">James Smith</p>
+  <h1 class="home-title">Data scientist in Ireland</h1>
+  <p class="home-lede">
+    I work mostly across fraud, claims, pricing, retention, and internal AI tools in insurance.
+    This page is a short outline of that work and a few side interests.
+  </p>
+  <p class="home-meta-line">
+    Lead Data Scientist at RedClick
+    <span aria-hidden="true">·</span>
+    Previously Liberty Mutual
+    <span aria-hidden="true">·</span>
+    Interested in simulation, decision support, and ecology-adjacent projects
+  </p>
+  <p class="home-inline-links">
+    <a href="#projects">Projects</a>
+    <span aria-hidden="true">/</span>
+    <a href="https://github.com/eg-jamessmith">GitHub</a>
+    <span aria-hidden="true">/</span>
+    <a href="https://www.linkedin.com/in/james-smith-816977131/">LinkedIn</a>
+  </p>
 </section>
 
 <section class="home-section" id="about">
-  <div class="home-section__intro">
-    <p class="home-kicker">About</p>
-    <h2>A compact summary rather than the full CV version.</h2>
-  </div>
+  <p class="home-kicker">About</p>
   <div class="home-grid home-grid--two">
-    <div class="home-card">
+    <div>
       <p>
         Over the last several years I have worked across applied analytics, modelling,
         experimentation, reporting, and machine learning delivery in regulated environments.
@@ -58,8 +43,8 @@ classes: wide landing-page
         for something practical at the other end.
       </p>
     </div>
-    <div class="home-card">
-      <h3>Areas I keep returning to</h3>
+    <div>
+      <h2 class="home-subheading">Areas I keep returning to</h2>
       <ul class="home-list">
         <li>Fraud analytics, network thinking, and decision support</li>
         <li>Pricing, retention, and customer behaviour modelling</li>
@@ -70,10 +55,7 @@ classes: wide landing-page
 </section>
 
 <section class="home-section" id="experience">
-  <div class="home-section__intro">
-    <p class="home-kicker">Experience</p>
-    <h2>The high-level version.</h2>
-  </div>
+  <p class="home-kicker">Experience</p>
   <div class="home-stack">
     <article class="home-item">
       <p class="home-item__meta">2025 to present</p>
@@ -109,12 +91,9 @@ classes: wide landing-page
 </section>
 
 <section class="home-section" id="projects">
-  <div class="home-section__intro">
-    <p class="home-kicker">Selected Projects</p>
-    <h2>A few things I have worked on or keep thinking about.</h2>
-  </div>
+  <p class="home-kicker">Selected Projects</p>
   <div class="home-grid home-grid--projects-compact">
-    <article class="home-card home-card--featured">
+    <article class="home-feature">
       <p class="home-meta">Side project idea</p>
       <h3>Ireland biodiversity and carbon capture planner</h3>
       <p>
@@ -128,7 +107,7 @@ classes: wide landing-page
         <li>Keep the output useful for discussion, not just modelling for its own sake</li>
       </ul>
     </article>
-    <article class="home-card">
+    <article>
       <p class="home-meta">Work theme</p>
       <h3>Fraud network modelling</h3>
       <p>
@@ -136,7 +115,7 @@ classes: wide landing-page
         standard policy-level approaches can miss.
       </p>
     </article>
-    <article class="home-card">
+    <article>
       <p class="home-meta">Work theme</p>
       <h3>Internal AI and knowledge tools</h3>
       <p>
@@ -148,22 +127,10 @@ classes: wide landing-page
 </section>
 
 <section class="home-section" id="links">
-  <div class="home-section__intro">
-    <p class="home-kicker">Links</p>
-    <h2>Elsewhere.</h2>
-  </div>
-  <div class="home-grid home-grid--links-compact">
-    <a class="home-link-card" href="https://github.com/eg-jamessmith">
-      <span class="home-link-card__label">GitHub</span>
-      <span class="home-link-card__meta">@eg-jamessmith</span>
-    </a>
-    <a class="home-link-card" href="https://www.linkedin.com/in/james-smith-816977131/">
-      <span class="home-link-card__label">LinkedIn</span>
-      <span class="home-link-card__meta">Background and CV details</span>
-    </a>
-    <a class="home-link-card" href="/about/">
-      <span class="home-link-card__label">About</span>
-      <span class="home-link-card__meta">A little extra context</span>
-    </a>
-  </div>
+  <p class="home-kicker">Links</p>
+  <ul class="home-links-list">
+    <li><a href="https://github.com/eg-jamessmith">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/james-smith-816977131/">LinkedIn</a></li>
+    <li><a href="/about/">About</a></li>
+  </ul>
 </section>
