@@ -7,9 +7,9 @@ classes: wide
 
 I am a data scientist based in Ireland with interests in applied analytics, modelling, and responsible machine learning.
 
-This site is now set up as a compact personal homepage rather than a traditional blog. The aim is to keep the structure simple: a clear front page, a small set of projects, and just enough room to grow without adding unnecessary complexity.
+Most of my recent work has been in insurance, across fraud, claims, pricing, retention, and internal AI tools. I like projects that are practical, reasonably well scoped, and clear about their trade-offs.
 
-My side projects usually sit somewhere between analysis, communication, and lightweight product design. Right now that includes:
+Outside work, I tend to be interested in side projects that sit somewhere between analysis, simulation, communication, and lightweight product design. Right now that includes:
 
 - ecological and climate-adjacent planning ideas
 - practical data workflows for messy real-world datasets

@@ -6,44 +6,64 @@ author_profile: false
 classes: wide landing-page
 ---
 
-<!-- Keep the homepage content in one file so the first version stays easy to edit. -->
-<section class="home-hero" id="top">
-  <p class="home-eyebrow">Data Scientist | Ireland</p>
-  <h1 class="home-title">Practical data science, clear communication, and side projects with real-world shape.</h1>
-  <p class="home-lede">
-    I'm James Smith, a data scientist interested in useful modelling, careful analysis,
-    and projects that help people explore difficult decisions with better evidence.
-  </p>
-  <div class="home-actions">
-    <a class="btn btn--primary" href="#projects">Selected projects</a>
-    <a class="btn btn--inverse" href="#links">Find me online</a>
+<!-- Keep the homepage content in one file so it stays easy to tweak. -->
+<section class="home-intro" id="top">
+  <div class="home-intro__main">
+    <p class="home-eyebrow">James Smith</p>
+    <h1 class="home-title">Data scientist in Ireland.</h1>
+    <p class="home-lede">
+      I spend most of my time working with analytics and machine learning in insurance,
+      especially around fraud, claims, pricing, retention, and internal AI tools.
+      This page is just a quiet outline of that work and a few things I am interested in.
+    </p>
+  </div>
+  <div class="home-intro__aside">
+    <dl class="home-facts">
+      <div>
+        <dt>Now</dt>
+        <dd>Lead Data Scientist at RedClick</dd>
+      </div>
+      <div>
+        <dt>Previously</dt>
+        <dd>Liberty Mutual, including a Trusted AI rotation</dd>
+      </div>
+      <div>
+        <dt>Interested in</dt>
+        <dd>decision support, simulation, ecology-adjacent ideas, and clear communication</dd>
+      </div>
+    </dl>
+    <p class="home-inline-links">
+      <a href="#projects">Projects</a>
+      <span aria-hidden="true">/</span>
+      <a href="https://github.com/eg-jamessmith">GitHub</a>
+      <span aria-hidden="true">/</span>
+      <a href="https://www.linkedin.com/in/james-smith-816977131/">LinkedIn</a>
+    </p>
   </div>
 </section>
 
 <section class="home-section" id="about">
   <div class="home-section__intro">
     <p class="home-kicker">About</p>
-    <h2>Concise, analytical, and happiest at the point where messy data becomes something useful.</h2>
+    <h2>A compact summary rather than the full CV version.</h2>
   </div>
-  <div class="home-grid home-grid--about">
-    <div class="home-card home-card--copy">
+  <div class="home-grid home-grid--two">
+    <div class="home-card">
       <p>
-        I work across data wrangling, exploratory analysis, modelling, and communication.
-        My interests lean toward decision support, responsible machine learning, and applied
-        projects that stay grounded in the constraints of the real world.
+        Over the last several years I have worked across applied analytics, modelling,
+        experimentation, reporting, and machine learning delivery in regulated environments.
       </p>
       <p>
-        Outside day-to-day analysis, I like building small tools, experiments, and explainers.
-        They are usually lightweight, but they help clarify a question, test an idea, or turn
-        a vague concept into something concrete enough to discuss.
+        I tend to enjoy work that starts with messy data, ambiguous questions, and a need
+        for something practical at the other end.
       </p>
     </div>
-    <div class="home-card home-card--list">
-      <h3>Focus areas</h3>
+    <div class="home-card">
+      <h3>Areas I keep returning to</h3>
       <ul class="home-list">
-        <li>Applied analytics, statistics, and forecasting</li>
-        <li>Reliable data preparation and repeatable workflows</li>
-        <li>Communicating technical results to broader audiences</li>
+        <li>Fraud analytics, network thinking, and decision support</li>
+        <li>Pricing, retention, and customer behaviour modelling</li>
+        <li>Responsible AI, internal tooling, and explaining results clearly</li>
       </ul>
     </div>
   </div>
@@ -52,32 +72,38 @@ classes: wide landing-page
 <section class="home-section" id="experience">
   <div class="home-section__intro">
     <p class="home-kicker">Experience</p>
-    <h2>A mini-CV view of the kinds of work I do most often.</h2>
+    <h2>The high-level version.</h2>
   </div>
-  <div class="home-grid home-grid--experience">
-    <article class="home-card">
-      <p class="home-meta">Applied Data Science</p>
-      <h3>From raw data to decisions</h3>
-      <p>
-        I enjoy taking untidy datasets through cleaning, analysis, modelling, and interpretation,
-        with an emphasis on outputs that are useful rather than merely impressive.
-      </p>
+  <div class="home-stack">
+    <article class="home-item">
+      <p class="home-item__meta">2025 to present</p>
+      <div class="home-item__body">
+        <h3>Lead Data Scientist, RedClick</h3>
+        <p>
+          Working across fraud, pricing, claims decision support, retention, and AI-enabled
+          tooling, with more of a leadership and direction-setting role.
+        </p>
+      </div>
     </article>
-    <article class="home-card">
-      <p class="home-meta">Research And Modelling</p>
-      <h3>Structured thinking under uncertainty</h3>
-      <p>
-        I am drawn to projects where there are trade-offs to reason about, assumptions to make
-        explicit, and scenarios to compare rather than one perfect answer to discover.
-      </p>
+    <article class="home-item">
+      <p class="home-item__meta">2022 to 2025</p>
+      <div class="home-item__body">
+        <h3>Senior Data Scientist</h3>
+        <p>
+          Focused on customer segmentation, retention modelling, fraud network analysis,
+          claims modelling, and a few practical internal AI tools.
+        </p>
+      </div>
     </article>
-    <article class="home-card">
-      <p class="home-meta">Independent Projects</p>
-      <h3>Small builds with a clear point of view</h3>
-      <p>
-        My side projects tend to combine analysis, lightweight product design, and communication,
-        especially when a prototype can make a complex idea easier to test or explain.
-      </p>
+    <article class="home-item">
+      <p class="home-item__meta">2018 to 2022</p>
+      <div class="home-item__body">
+        <h3>Data Scientist, Liberty Mutual</h3>
+        <p>
+          Worked across fraud analytics, forecasting, dashboarding, and decision support,
+          including a short Trusted AI rotation on privacy-preserving AI and synthetic data.
+        </p>
+      </div>
     </article>
   </div>
 </section>
@@ -85,36 +111,37 @@ classes: wide landing-page
 <section class="home-section" id="projects">
   <div class="home-section__intro">
     <p class="home-kicker">Selected Projects</p>
-    <h2>One featured concept and a few smaller examples of the direction I like to explore.</h2>
+    <h2>A few things I have worked on or keep thinking about.</h2>
   </div>
-  <div class="home-grid home-grid--projects">
+  <div class="home-grid home-grid--projects-compact">
     <article class="home-card home-card--featured">
-      <p class="home-meta">Featured Project Concept</p>
-      <h3>Ireland Biodiversity And Carbon Capture Planner</h3>
+      <p class="home-meta">Side project idea</p>
+      <h3>Ireland biodiversity and carbon capture planner</h3>
       <p>
-        A scenario-planning tool for exploring where native tree planting in Ireland could
-        support biodiversity recovery, habitat connectivity, and carbon capture together.
+        A lightweight simulation and mapping idea for exploring where native tree planting
+        in Ireland could support biodiversity recovery, habitat connectivity, and carbon
+        capture at the same time.
       </p>
       <ul class="home-list">
-        <li>Compare planting scenarios using native species mixes and land-use constraints</li>
-        <li>Estimate trade-offs across biodiversity, sequestration, and practical feasibility</li>
-        <li>Use simulation outputs to support discussion with councils, landowners, or NGOs</li>
+        <li>Compare planting scenarios under different land-use assumptions</li>
+        <li>Look at trade-offs rather than pretending there is one optimal answer</li>
+        <li>Keep the output useful for discussion, not just modelling for its own sake</li>
       </ul>
     </article>
     <article class="home-card">
-      <p class="home-meta">Workflow Project</p>
-      <h3>Data Wrangling Toolkit</h3>
+      <p class="home-meta">Work theme</p>
+      <h3>Fraud network modelling</h3>
       <p>
-        A small set of reusable notebooks and checks for cleaning messy tabular data,
-        validating assumptions early, and reducing time lost to repeated manual fixes.
+        Building network-based views of fraud behaviour to help analysts find patterns that
+        standard policy-level approaches can miss.
       </p>
     </article>
     <article class="home-card">
-      <p class="home-meta">Communication Project</p>
-      <h3>Machine Learning Notes And Explainers</h3>
+      <p class="home-meta">Work theme</p>
+      <h3>Internal AI and knowledge tools</h3>
       <p>
-        Short posts, demos, and visual explanations that make technical topics easier to reason
-        about without losing the important detail underneath.
+        Small, practical tools using conversational AI or classification to make internal
+        workflows a bit easier for non-technical teams.
       </p>
     </article>
   </div>
@@ -123,27 +150,20 @@ classes: wide landing-page
 <section class="home-section" id="links">
   <div class="home-section__intro">
     <p class="home-kicker">Links</p>
-    <h2>The essentials.</h2>
+    <h2>Elsewhere.</h2>
   </div>
-  <div class="home-grid home-grid--links">
+  <div class="home-grid home-grid--links-compact">
     <a class="home-link-card" href="https://github.com/eg-jamessmith">
       <span class="home-link-card__label">GitHub</span>
       <span class="home-link-card__meta">@eg-jamessmith</span>
     </a>
     <a class="home-link-card" href="https://www.linkedin.com/in/james-smith-816977131/">
       <span class="home-link-card__label">LinkedIn</span>
-      <span class="home-link-card__meta">Professional profile</span>
+      <span class="home-link-card__meta">Background and CV details</span>
     </a>
     <a class="home-link-card" href="/about/">
       <span class="home-link-card__label">About</span>
-      <span class="home-link-card__meta">A little more background</span>
+      <span class="home-link-card__meta">A little extra context</span>
     </a>
   </div>
-</section>
-
-<section class="home-closing">
-  <p>
-    This first version is intentionally compact: a single landing page, a clearer story,
-    and enough structure to expand later without turning the site back into a generic starter blog.
-  </p>
 </section>
