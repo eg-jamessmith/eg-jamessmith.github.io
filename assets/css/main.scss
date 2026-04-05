@@ -6,3 +6,206 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Minimal custom layer for the new homepage. Most changes are scoped so the theme remains intact. */
+:root {
+  --landing-bg: #f4f6f1;
+  --landing-surface: #ffffff;
+  --landing-surface-alt: #eef3ed;
+  --landing-border: #d7e0d6;
+  --landing-text: #162019;
+  --landing-muted: #5b6a61;
+  --landing-accent: #2d6650;
+  --landing-shadow: 0 24px 60px rgba(16, 27, 21, 0.08);
+}
+
+body {
+  background: linear-gradient(180deg, #f4f6f1 0%, #ffffff 20rem);
+  color: var(--landing-text);
+}
+
+.masthead {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(215, 224, 214, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.landing-page .page__title {
+  display: none;
+}
+
+.landing-page .page__content {
+  margin-top: 0;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.landing-page h1,
+.landing-page h2,
+.landing-page h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.home-hero {
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--landing-border);
+  border-radius: 28px;
+  background-image:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(238, 243, 237, 0.88)),
+    url("/images/waterfront.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--landing-shadow);
+}
+
+.home-eyebrow,
+.home-kicker,
+.home-meta {
+  margin: 0 0 0.85rem;
+  color: var(--landing-accent);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-title {
+  margin: 0 0 1rem;
+  max-width: 12ch;
+  font-size: clamp(2.7rem, 6vw, 4.9rem);
+}
+
+.home-lede {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+  color: var(--landing-muted);
+  font-size: 1.15rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.landing-page .btn {
+  border-radius: 999px;
+  padding: 0.85rem 1.35rem;
+  font-weight: 600;
+}
+
+.landing-page .btn--primary {
+  background: var(--landing-accent);
+  color: #ffffff;
+}
+
+.landing-page .btn--inverse {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--landing-text);
+}
+
+.home-section {
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.home-section__intro {
+  max-width: 46rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-section__intro h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.home-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.home-card,
+.home-link-card {
+  min-height: 100%;
+  padding: 1.4rem;
+  border: 1px solid var(--landing-border);
+  border-radius: 22px;
+  background: var(--landing-surface);
+  box-shadow: 0 12px 30px rgba(16, 27, 21, 0.04);
+}
+
+.home-card--featured {
+  background: linear-gradient(180deg, #ffffff 0%, var(--landing-surface-alt) 100%);
+}
+
+.home-card h3,
+.home-link-card__label {
+  margin-top: 0;
+}
+
+.home-card p:last-child,
+.home-link-card__meta {
+  margin-bottom: 0;
+}
+
+.home-list {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.home-list li + li {
+  margin-top: 0.55rem;
+}
+
+.home-link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-link-card:hover,
+.home-link-card:focus {
+  transform: translateY(-2px);
+  border-color: var(--landing-accent);
+  box-shadow: var(--landing-shadow);
+}
+
+.home-link-card__meta,
+.home-closing {
+  color: var(--landing-muted);
+}
+
+.home-closing {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--landing-border);
+}
+
+@media (min-width: 50em) {
+  .home-grid--about {
+    grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 1fr);
+  }
+
+  .home-grid--experience,
+  .home-grid--links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-grid--projects {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-card--featured {
+    grid-column: span 2;
+  }
+}
